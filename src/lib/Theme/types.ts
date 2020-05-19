@@ -4,6 +4,9 @@ export interface GlobalTheme {
   text: Text;
   title: TextType;
   subTitle: TextType;
+  paragraph: TextType;
+  subHeader: TextType;
+  hint: TextType;
 }
 
 export interface Breakpoints {
@@ -27,9 +30,10 @@ export interface Text {
 }
 
 export interface TextType {
-  fontFamily: string;
-  fontSize: string;
-  fontWeight: string;
-  lineHeight: string;
-  textTransform: string;
+  fontFamily?: string;
+  fontSize?: string;
+  fontWeight?: string;
+  lineHeight?: string;
+  textTransform?: string;
+  color?: string;
 }

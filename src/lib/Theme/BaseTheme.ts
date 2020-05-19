@@ -26,6 +26,7 @@ const title: TextType = {
   fontWeight: "bold",
   lineHeight: "56px",
   textTransform: "UPPERCASE",
+  color: text.primary,
 };
 
 const subTitle: TextType = {
@@ -34,6 +35,31 @@ const subTitle: TextType = {
   fontWeight: "bold",
   lineHeight: "39px",
   textTransform: "UPPERCASE",
+  color: text.primary,
+};
+
+const subHeader: TextType = {
+  fontFamily: font.primaryFont,
+  fontSize: "18px",
+  fontWeight: "bold",
+  lineHeight: "26px",
+  color: text.primary,
+};
+
+const paragraph: TextType = {
+  fontFamily: font.primaryFont,
+  fontSize: "14px",
+  lineHeight: "26px",
+  fontWeight: "normal",
+  color: text.primary,
+};
+
+const hint: TextType = {
+  fontFamily: font.primaryFont,
+  fontSize: "14px",
+  lineHeight: "26px",
+  fontWeight: "normal",
+  color: text.hint,
 };
 
 export const BaseTheme: GlobalTheme = {
@@ -42,4 +68,7 @@ export const BaseTheme: GlobalTheme = {
   text,
   title,
   subTitle,
+  paragraph,
+  subHeader,
+  hint,
 };

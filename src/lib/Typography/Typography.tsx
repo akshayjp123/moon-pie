@@ -1,5 +1,11 @@
 import React from "react";
-import { Title, SubTitle } from "./Typography.styles";
+import {
+  Title,
+  SubTitle,
+  Paragraph,
+  SubHeader,
+  Hint,
+} from "./Typography.styles";
 
 interface Props {
   children: React.ReactNode;
@@ -13,6 +19,12 @@ const PITypography: React.FC<Props> = (props) => {
       return <Title kind={kind || "light"}>{children}</Title>;
     case "subtitle":
       return <SubTitle kind={kind || "light"}>{children}</SubTitle>;
+    case "subHeader":
+      return <SubHeader kind={kind || "light"}>{children}</SubHeader>;
+    case "paragraph":
+      return <Paragraph kind={kind || "light"}>{children}</Paragraph>;
+    case "hint":
+      return <Hint kind={kind || "light"}>{children}</Hint>;
     default:
       return <Title kind={kind || "light"}>{children}</Title>;
   }
