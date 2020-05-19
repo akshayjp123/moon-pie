@@ -18,6 +18,7 @@ const text: Text = {
   disabled: "#6d6e71",
   primary: "#262626",
   secondary: "#ffffff",
+  link: "#0000EE",
 };
 
 const title: TextType = {

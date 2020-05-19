@@ -9,6 +9,10 @@ export interface GlobalTheme {
   hint: TextType;
 }
 
+export interface StyleProps {
+  kind: string;
+}
+
 export interface Breakpoints {
   xs: number;
   sm: number;
@@ -27,6 +31,7 @@ export interface Text {
   hint: string;
   primary: string;
   secondary: string;
+  link: string;
 }
 
 export interface TextType {

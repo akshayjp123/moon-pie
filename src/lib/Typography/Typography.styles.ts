@@ -1,12 +1,9 @@
 import styled from "styled-components";
 import { BaseTheme } from "../Theme";
+import { StyleProps } from "../Theme/types";
 
-interface TypoProps {
-  kind: string;
-}
-
-export const Title = styled.h1<TypoProps>`
-  color: ${(props: TypoProps) =>
+export const Title = styled.h1<StyleProps>`
+  color: ${(props: StyleProps) =>
     props.kind === "light" ? BaseTheme.text.primary : BaseTheme.text.secondary};
   font-family: ${BaseTheme.title.fontFamily};
   font-size: ${BaseTheme.title.fontSize};
@@ -15,8 +12,8 @@ export const Title = styled.h1<TypoProps>`
   text-transform: ${BaseTheme.title.textTransform};
 `;
 
-export const SubTitle = styled.h2<TypoProps>`
-  color: ${(props: TypoProps) =>
+export const SubTitle = styled.h2<StyleProps>`
+  color: ${(props: StyleProps) =>
     props.kind === "light" ? BaseTheme.text.primary : BaseTheme.text.secondary};
   font-family: ${BaseTheme.subTitle.fontFamily};
   font-size: ${BaseTheme.subTitle.fontSize};
@@ -25,8 +22,8 @@ export const SubTitle = styled.h2<TypoProps>`
   text-transform: ${BaseTheme.subTitle.textTransform};
 `;
 
-export const SubHeader = styled.h3<TypoProps>`
-  color: ${(props: TypoProps) =>
+export const SubHeader = styled.h3<StyleProps>`
+  color: ${(props: StyleProps) =>
     props.kind === "light" ? BaseTheme.text.primary : BaseTheme.text.secondary};
   font-family: ${BaseTheme.subHeader.fontFamily};
   font-size: ${BaseTheme.subHeader.fontSize};
@@ -35,8 +32,8 @@ export const SubHeader = styled.h3<TypoProps>`
   padding: 0px 10px;
 `;
 
-export const Paragraph = styled.p<TypoProps>`
-  color: ${(props: TypoProps) =>
+export const Paragraph = styled.p<StyleProps>`
+  color: ${(props: StyleProps) =>
     props.kind === "light" ? BaseTheme.text.primary : BaseTheme.text.secondary};
   font-family: ${BaseTheme.paragraph.fontFamily};
   font-size: ${BaseTheme.paragraph.fontSize};
@@ -45,8 +42,8 @@ export const Paragraph = styled.p<TypoProps>`
   padding: 0px 10px;
 `;
 
-export const Hint = styled.p<TypoProps>`
-  color: ${(props: TypoProps) =>
+export const Hint = styled.p<StyleProps>`
+  color: ${(props: StyleProps) =>
     props.kind === "light" ? BaseTheme.text.hint : BaseTheme.text.secondary};
   font-family: ${BaseTheme.hint.fontFamily};
   font-size: ${BaseTheme.hint.fontSize};
